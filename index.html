@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trains cometh and obviate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <div id="masthead" class="bg-secondary">
+        <div class="container">
+            <div id="title-header" class="jumbotron text-center text-white bg-primary">
+                <h1>Stay On Track!</h1>
+                <h2>Just A Regular Ole' Train Schedule</h2>
+            </div>
+
+            <div class="card text-white bg-primary">
+                <div class="card-header">Current Train Schedule</div>
+                    <div class="card-body bg-white">
+                        
+                    </div>
+                </div>
+            
+            <br>
+
+            <div class="card bg-primary">
+                <div class="card-header text-white">Add Train</div>
+                    <div class="card-body bg-white">
+                        <label for="train-name-input">Train Name</label> 
+                        <input id="train-name-input" class="form-control" type="text">
+                        <br>
+                        <label for="desination-input">Destination</label>
+                        <input id="destination-input" class="form-control" type="text">
+                        <br>
+                        <label for="train-time-input">First Train Time (HH:mm - 24-Hour Format)</label>
+                        <input id="train-time-input" class="form-control" type="text">
+                        <br>
+                        <label for="frequency-input">Frequency (minutes)</label>
+                        <input id="frequency-input" class="form-control" type="text">
+                        <br>
+                        <button id="submit-button" type="button" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+
+            </div>
+
+            <div>
+                    
+
+            </div>
+            
+            
+        </div>
+        
+
+    </div>
+    
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+
+</body>
+</html>
