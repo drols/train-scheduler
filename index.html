@@ -20,7 +20,16 @@
 
             <div class="card text-white bg-primary">
                 <div class="card-header">Current Train Schedule</div>
-                    <div class="card-body bg-white">
+                    <div id="current-schedule" class="card-body bg-white">
+                        <table>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </table>
                         
                     </div>
                 </div>
@@ -29,39 +38,32 @@
 
             <div class="card bg-primary">
                 <div class="card-header text-white">Add Train</div>
-                    <div class="card-body bg-white">
-                        <label for="train-name-input">Train Name</label> 
-                        <input id="train-name-input" class="form-control" type="text">
-                        <br>
-                        <label for="desination-input">Destination</label>
-                        <input id="destination-input" class="form-control" type="text">
-                        <br>
-                        <label for="train-time-input">First Train Time (HH:mm - 24-Hour Format)</label>
-                        <input id="train-time-input" class="form-control" type="text">
-                        <br>
-                        <label for="frequency-input">Frequency (minutes)</label>
-                        <input id="frequency-input" class="form-control" type="text">
-                        <br>
-                        <button id="submit-button" type="button" class="btn btn-primary btn-lg">Submit</button>
-                    </div>
-
-            </div>
-
-            <div>
-                    
-
-            </div>
-            
-            
+                <form id="train-form" class="card-body bg-white">
+                    <label for="train-name-input">Train Name</label> 
+                    <input id="train-name-input" class="form-control" type="text">
+                    <br>
+                    <label for="desination-input">Destination</label>
+                    <input id="destination-input" class="form-control" type="text">
+                    <br>
+                    <label for="train-time-input">First Train Time (HH:mm - 24-Hour Format)</label>
+                    <input id="train-time-input" class="form-control" type="text">
+                    <br>
+                    <label for="frequency-input">Frequency (minutes)</label>
+                    <input id="frequency-input" class="form-control" type="text">
+                    <br>
+                    <input id="submit-button" class="btn btn-primary btn-lg" type="button" onclick="" value="Submit">
+                    <!-- <button id="submit-button" type="button" class="btn btn-primary btn-lg">Submit</button> -->
+                    <br>
+                </form>
+            </div>  
         </div>
-        
-
     </div>
     
 
 
 
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </body>
 </html>
